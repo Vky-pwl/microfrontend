@@ -12,7 +12,8 @@ plugins:[
         filename:'remoteEntry.js',
         exposes:{
             './ProductsIndex':'./src/index'
-        }
+        },
+        shared:['faker'],
     }),
     new HtmlWebpackPulgin({
         template:'./public/index.html'
